@@ -9,8 +9,10 @@ const app = express();
 //Logger Detailed information req
 app.use(morgan('combined'));
 
-//set Template Views Dynamic
-app.set('view engine', 'pug');
+app.set('view engine', 'ejs');
+
+// //set Template Views Dynamic
+// app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views'));
 
 //Read File Static

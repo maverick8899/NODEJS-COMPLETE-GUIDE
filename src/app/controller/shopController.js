@@ -1,6 +1,6 @@
 class ShopController {
     index(req, res, next) {
-        res.render('shop', { pageTitle: 'Shop' });
+        res.render('shop', { pageTitle: 'Shop', path: '/', prods: 2 });
     }
 }
 
